@@ -7,6 +7,9 @@ import { HomePageComponent } from './Components/home-page/home-page.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { FooterComponent } from './Components/footer/footer.component';
 import { LoginButtonComponent } from './Components/header/login-button/login-button.component';
+import { SortingByTagsComponent } from './Components/home-page/sorting-by-tags/sorting-by-tags.component';
+import { RecipeOfTheDayComponent } from './Components/home-page/recipe-of-the-day/recipe-of-the-day.component';
+import { SearchRecipesComponent } from './Components/home-page/search-recipes/search-recipes.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { LoginButtonComponent } from './Components/header/login-button/login-but
     HomePageComponent,
     HeaderComponent,
     FooterComponent,
-    LoginButtonComponent
+    LoginButtonComponent,
+    SortingByTagsComponent,
+    RecipeOfTheDayComponent,
+    SearchRecipesComponent
   ],
   imports: [
     BrowserModule,

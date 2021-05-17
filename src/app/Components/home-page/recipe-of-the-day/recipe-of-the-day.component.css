@@ -1,0 +1,120 @@
+.day-recipe
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 83.2%;
+    height: 600px;
+    margin: 2px auto;
+    background: url(../../../../assets/images/day-recipe.png);
+    background-position-x: left;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.day-recipe::after
+{
+    content: url("../../../../assets/images/day-recipe-time.svg");
+    width: 109px;
+    height: 28px;
+    position: absolute;
+    top: 7px;
+    left: 82.6%;
+}
+
+.day-recipe__content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 48.7%;
+    padding: 178px 0;
+}
+
+.day-recipe__like:hover:before
+{
+    content: url("../../../../assets/images/like-red.png");
+}
+
+.day-recipe__like::before
+{
+    content: url("../../../../assets/images/like.png");
+    width: 59px;
+    height: 28px;
+    position: absolute;
+    top: 5px;
+    left: -27px;
+}
+
+.day-recipe__like
+{
+    position: absolute;
+    right: 271px;
+    top: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #25292D;
+}
+
+.day-recipe__title::before
+{
+    content: url("../../../../assets/images/day-recipe-icon.svg");
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -150px;
+    left: -26px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.day-recipe__title
+{
+    position: relative;
+    width: 512px;
+    height: 120px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: #25292D;
+}
+
+.day-recipe__text
+{
+    display: block;
+    width: 520px;
+    height: 128px;
+    margin-top: 16px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 32px;
+    font-feature-settings: 'case' on;
+    color: #4A525A;
+}
+
+.day-recipe__user
+{
+    width: 108px;
+    height: 32px;
+    position: absolute;
+    border-radius: 0 5px 5px 0;
+    top: 475px;
+    left: 0;
+    background-color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #FDB100;
+    text-decoration: none;
+}
