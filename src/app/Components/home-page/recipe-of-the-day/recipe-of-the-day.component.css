@@ -33,12 +33,13 @@
 
 .day-recipe__like:hover:before
 {
-    content: url("../../../../assets/images/like-red.png");
+    content: url("../../../../assets/images/like-red.svg");
+    cursor: pointer;
 }
 
 .day-recipe__like::before
 {
-    content: url("../../../../assets/images/like.png");
+    content: url("../../../../assets/images/like.svg");
     width: 59px;
     height: 28px;
     position: absolute;

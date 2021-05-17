@@ -1,5 +1,6 @@
 .header
 {
+    position: absolute;
     display: flex;
     flex-direction: row;
     width: 83.2%;
@@ -31,40 +32,43 @@
 }
 
 .item:hover {
-    font-weight: 600;
+    text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
     color: #3A3C41;
 }
 
 .item:active {
-    font-weight: 600;
+    text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
     color: #3A3C41;
 }
 
 .item {
+    transition: text-shadow .3s;
     display: block;
     margin-top: 4px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 22px;
     color: #9196A1;
     background: none;
     border: none;
+    transition: linear 0.3s;
     text-decoration: none;
 }
 
-.item__home
+.item_home
 {
     width: 76px;
 }
 
-.item__recipe
+.item_recipe
 {
     width: 82px;
 }
 
-.item__favorites
+.item_favorites
 {
     width: 106px;
 }

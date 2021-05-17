@@ -12,6 +12,7 @@
 
 .slogan__content
 {
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     width: 83.2%;
