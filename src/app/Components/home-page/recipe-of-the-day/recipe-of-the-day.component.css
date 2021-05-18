@@ -43,19 +43,19 @@
     width: 59px;
     height: 28px;
     position: absolute;
-    top: 5px;
-    left: -27px;
+    top: 2px;
+    left: -29px;
 }
 
 .day-recipe__like
 {
     position: absolute;
     right: 271px;
-    top: 5px;
+    top: 6.7px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 28px;
     color: #25292D;
 }
