@@ -1,5 +1,5 @@
 .home-page
 {
-    position: absolute;
-    background: url(/src/assets/images/background-wave.svg);
+    background: url(../assets/images/background-wave.svg);
+    background-size: cover;
 }
