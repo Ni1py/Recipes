@@ -1,10 +1,17 @@
+.day-recipe:hover
+{
+    box-shadow: 0 0 20px 4px #3A2F28;
+    cursor: pointer;
+}
+
 .day-recipe
 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    border-radius: 77px 0px;
     width: 83.2%;
-    height: 600px;
+    height: 543px;
     margin: 2px auto;
     background: url(../../../../assets/images/day-recipe.png);
     background-position-x: left;
