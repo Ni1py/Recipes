@@ -8,7 +8,7 @@
     padding: 13px 8.4%;
 }
 
-.sorting__title
+.sorting_title
 {
     width: 811px;
     height: 62px;
@@ -20,7 +20,7 @@
     color: #25292D;
 }
 
-.sorting__text
+.sorting_text
 {
     width: 690px;
     height: 68px;
@@ -58,7 +58,7 @@
     position: relative;
 }
 
-.card__title
+.card_title
 {
     display: block;
     width: 220px;
@@ -72,7 +72,7 @@
     color: #25292D;
 }
 
-.card__text
+.card_text
 {
     display: block;
     width: 230px;

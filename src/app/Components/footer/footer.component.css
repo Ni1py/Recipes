@@ -9,7 +9,7 @@
     background-color: #FBF9F4;
 }
 
-.footer__title
+.footer_title
 {
     width: 99px;
     height: 29px;
@@ -21,7 +21,7 @@
     color: #FDB100;
 }
 
-.footer__signature
+.footer_signature
 {
     width: 151px;
     height: 24px;

@@ -1,10 +1,10 @@
-.day-recipe:hover
+.day_recipe:hover
 {
     box-shadow: 0 0 20px 4px #3A2F28;
     cursor: pointer;
 }
 
-.day-recipe
+.day_recipe
 {
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@
     position: relative;
 }
 
-.day-recipe::after
+.day_recipe::after
 {
     content: url("../../../../assets/images/day-recipe-time.svg");
     width: 109px;
@@ -29,7 +29,7 @@
     left: 82.6%;
 }
 
-.day-recipe__content
+.day_recipe_content
 {
     display: flex;
     flex-direction: column;
@@ -38,13 +38,13 @@
     padding: 178px 0;
 }
 
-.day-recipe__like:hover:before
+.day_recipe_like:hover:before
 {
     content: url("../../../../assets/images/like-red.svg");
     cursor: pointer;
 }
 
-.day-recipe__like::before
+.day_recipe_like::before
 {
     content: url("../../../../assets/images/like.svg");
     width: 59px;
@@ -54,7 +54,7 @@
     left: -29px;
 }
 
-.day-recipe__like
+.day_recipe_like
 {
     position: absolute;
     right: 271px;
@@ -67,7 +67,7 @@
     color: #25292D;
 }
 
-.day-recipe__title::before
+.day_recipe_title::before
 {
     content: url("../../../../assets/images/day-recipe-icon.svg");
     width: 50px;
@@ -79,7 +79,7 @@
     padding: 15px;
 }
 
-.day-recipe__title
+.day_recipe_title
 {
     position: relative;
     width: 512px;
@@ -93,7 +93,7 @@
     color: #25292D;
 }
 
-.day-recipe__text
+.day_recipe_text
 {
     display: block;
     width: 520px;
@@ -108,7 +108,7 @@
     color: #4A525A;
 }
 
-.day-recipe__user
+.day_recipe_user
 {
     width: 108px;
     height: 32px;

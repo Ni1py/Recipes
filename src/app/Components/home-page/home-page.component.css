@@ -10,7 +10,7 @@
     background-repeat: no-repeat;
 }
 
-.slogan__content
+.slogan_content
 {
     margin-top: 100px;
     display: flex;
@@ -21,7 +21,7 @@
     justify-content: flex-start;
 }
 
-.slogan__content__title
+.slogan_content_title
 {
     width: 688px;
     height: 176px;
@@ -34,7 +34,7 @@
     margin-bottom: 16px;
 }
 
-.slogan__content__statement
+.slogan_content_statement
 {
     width: 480px;
     height: 56px;
@@ -47,7 +47,7 @@
     margin-bottom: 42px;
 }
 
-.slogan__buttons
+.slogan_buttons
 {
     display: flex;
     flex-direction: row;
@@ -137,7 +137,7 @@
     padding: 93px 0;
 }
 
-.search__title
+.search_title
 {
     margin: 0 auto;
     width: 372px;
@@ -151,7 +151,7 @@
     color: #25292D;
 }
 
-.search__text
+.search_text
 {
     margin: 16px auto 64px;
     width: 700px;
