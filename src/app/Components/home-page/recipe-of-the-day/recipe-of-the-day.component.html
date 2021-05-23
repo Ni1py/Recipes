@@ -1,14 +1,10 @@
 <div class="day_recipe">
+    <img class="day_recipe_image" src="{{card.image}}" alt="Recipe of the day"/>
     <div class="day_recipe_content">
-        <span class="day_recipe_like">356</span>
-        <span class="day_recipe_title">
-            Тыквенный супчик<br/>на кокосовом молоке
-        </span>
-        <span class="day_recipe_text">
-            Если у вас осталась тыква, и вы не знаете что с ней сделать, 
-            то это решение для вас! Ароматный, согревающий суп-пюре на 
-            кокосовом молоке. Можно даже в Пост!
-        </span>
+        <span class="day_recipe_like">{{card.likes}}</span>
+        <span class="day_recipe_time">{{card.time}}</span>
+        <span class="day_recipe_title">{{card.title}}</span>
+        <span class="day_recipe_text">{{card.text}}</span>
     </div>
-    <a href="#" class="day_recipe_user">@glazest</a>
+    <a href="#" class="day_recipe_user">{{card.author}}</a>
 </div>

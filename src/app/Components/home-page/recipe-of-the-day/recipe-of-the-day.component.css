@@ -8,25 +8,27 @@
 {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: flex-start;
     border-radius: 77px 24px 24px 0;
     width: 83.2%;
     height: 543px;
     margin: 2px auto;
-    background: url(../../../../assets/images/day-recipe.png);
-    background-position-x: left;
-    background-repeat: no-repeat;
     position: relative;
 }
 
 .day_recipe::after
 {
-    content: url("../../../../assets/images/day-recipe-time.svg");
+    content: url("../../../../assets/images/day_recipe_time.png");
     width: 109px;
     height: 28px;
     position: absolute;
     top: 7px;
     left: 82.6%;
+}
+
+.day_recipe_image
+{
+    margin-right: 58px;
 }
 
 .day_recipe_content
@@ -46,7 +48,7 @@
 
 .day_recipe_like::before
 {
-    content: url("../../../../assets/images/like.svg");
+    content: url("../../../../assets/images/like.png");
     width: 59px;
     height: 28px;
     position: absolute;
@@ -64,7 +66,18 @@
     font-weight: normal;
     font-size: 17px;
     line-height: 28px;
-    color: #25292D;
+}
+
+.day_recipe_time
+{
+    position: absolute;
+    right: 114px;
+    top: 6.7px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
 }
 
 .day_recipe_title::before
@@ -82,7 +95,7 @@
 .day_recipe_title
 {
     position: relative;
-    width: 512px;
+    width: 509px;
     height: 120px;
     font-family: Montserrat;
     font-style: normal;

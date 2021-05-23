@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CardContent } from '../recipe-of-the-day/recipe-of-the-day-card';
 
 @Component({
   selector: 'app-recipe-of-the-day',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecipeOfTheDayComponent implements OnInit {
 
+  @Input() card!: CardContent;
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 }
