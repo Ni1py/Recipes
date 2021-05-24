@@ -1,6 +1,6 @@
 .search
 {
-    width: 62%;
+    width: 105%;
     height: 115px;
     margin: 0 auto;
 }
@@ -67,7 +67,7 @@
     flex-direction: row;
     justify-content: space-between;
     width: 33%;
-    margin-top: 23px;
+    margin-top: 9px;
     margin-left: 4px;
 }
 

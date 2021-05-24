@@ -1,0 +1,48 @@
+.title
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83.2%;
+    height: 110px;
+    padding: 162px 8.4% 0;
+}
+
+.title_recipe
+{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42px;
+    line-height: 62px;
+    color: #25292D;
+}
+
+.search_recipes
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 83.2%;
+    height: 80px;
+    padding: 0 8.4%;
+    margin: 47px 0 20px;
+}
+
+.search_title
+{
+    width: 197px;
+    height: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #25292D;
+    align-self: center;
+}
+
+.search_input
+{
+    width: 80%;
+}

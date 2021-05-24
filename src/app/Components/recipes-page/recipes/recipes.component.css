@@ -1,0 +1,40 @@
+.cards
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 83.2%;
+    padding: 102px 8.4% 108px;
+    height: 100%;
+}
+
+.card
+{
+    margin-bottom: 40px;
+}
+
+.cards_button
+{
+    margin: 65px auto 0;
+    height: 60px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    width: 26%;
+    border: 1px solid #FDB100;
+    box-sizing: border-box;
+    background-color: #FFF;
+    color: #FDB100;
+    justify-content: center;
+}
+
+.cards_button:hover
+{
+    background: #FDB100;
+    color: #FFF;
+    border: none;
+}
