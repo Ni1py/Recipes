@@ -16,16 +16,6 @@
     position: relative;
 }
 
-.day_recipe::after
-{
-    content: url("../../../../assets/images/day_recipe_time.png");
-    width: 109px;
-    height: 28px;
-    position: absolute;
-    top: 7px;
-    left: 82.6%;
-}
-
 .day_recipe_image
 {
     margin-right: 58px;
@@ -49,10 +39,10 @@
 .day_recipe_like::before
 {
     content: url("../../../../assets/images/like.png");
-    width: 59px;
-    height: 28px;
+    width: 22px;
+    height: 20px;
     position: absolute;
-    top: 2px;
+    top: 3px;
     left: -29px;
 }
 
@@ -66,6 +56,16 @@
     font-weight: normal;
     font-size: 17px;
     line-height: 28px;
+}
+
+.day_recipe_time::before
+{
+    content: url(../../../../assets/images/day_recipe_time.png);
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    top: 1px;
+    right: 85px;
 }
 
 .day_recipe_time
