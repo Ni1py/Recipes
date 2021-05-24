@@ -1,0 +1,28 @@
+.item::before
+{
+    content: url("../../../../assets/images/login-icon.svg");
+    width: 38px;
+    height: 38px;
+    position: absolute;
+    top: -8px;
+    left: -47px;
+}
+
+.item:hover {
+    text-shadow: 0 0 .65px #df9c00, 0 0 .65px #df9c00;
+    color: #df9c00;
+}
+
+.item
+{
+    transition: text-shadow .3s;
+    font-family: Montserrat;
+    font-size: 18px;
+    line-height: 22px;
+    position: relative;
+    width: 60px;
+    font-weight: 600;
+    color: #FDB100;
+    margin-right: 0.4%;
+    text-decoration: none;
+}
