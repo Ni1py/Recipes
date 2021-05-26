@@ -29,13 +29,6 @@
     margin-right: 8%;
 }
 
-.active 
-{
-    /* text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
-    color: black; */
-    background-color: aqua;
-}
-
 .item:hover {
     text-shadow: 0 0 .9px #333, 0 0 .9px #333, 0 0 .9px #333;
     color: #3A3C41;
