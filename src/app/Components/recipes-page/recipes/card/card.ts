@@ -6,7 +6,7 @@ export interface CardContent {
     tag3: string;
     favorites: string;
     likes: string;
-    header: string;
+    title: string;
     text: string;
     time: string;
     persons: string;

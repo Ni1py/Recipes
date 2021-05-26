@@ -1,43 +1,43 @@
 <div class="card">
-    <img class="card_image" src="{{content.image}}" alt="card photo"/>
-    <div class="card_author">{{content.author}}</div>
+    <img class="card_image" src="{{card.image}}" alt="recipe"/>
+    <a class="card_author">{{card.author}}</a>
     <div class="card_content">
-        <div class="navigation">
+        <div class="additional_features">
             <div class="tags">
-                <button class="tag">{{content.tag1}}</button>
-                <button class="tag">{{content.tag2}}</button>
-                <button class="tag">{{content.tag3}}</button>
+                <a class="tag">{{card.tag1}}</a>
+                <a class="tag">{{card.tag2}}</a>
+                <a class="tag">{{card.tag3}}</a>
             </div>
-            <div class="buttons">
-                <button class="button button_favorite" (click)="switchFavoriteRecipe()">
-                    <img class="button_image" *ngIf="isFavoriteRecipe" src="../../../../../assets/images/star.svg" alt="star photo"/>
-                    <img class="button_image" *ngIf="!isFavoriteRecipe" src="../../../../../assets/images/star_full.svg" alt="star photo"/>
-                    <span class="button_text">{{content.favorites}}</span>
-                </button>
-                <button class="button button_like" (click)="switchLikedRecipe()">
-                    <img class="button_image" *ngIf="isLikedRecipe" src="../../../../../assets/images/like.svg" alt="heart photo"/>
-                    <img class="button_image" *ngIf="!isLikedRecipe" src="../../../../../assets/images/like-red.svg" alt="heart photo"/>
-                    <span class="button_text">{{content.likes}}</span>
-                </button>
+            <div class="items">
+                <a class="item item_favorite" (click)="selectFavorite()">
+                    <img class="item_image" *ngIf="isFavorite" src="../../../../../assets/images/star.svg" alt="star"/>
+                    <img class="item_image" *ngIf="!isFavorite" src="../../../../../assets/images/star_full.svg" alt="star"/>
+                    <span class="item_text">{{card.favorites}}</span>
+                </a>
+                <a class="item item_like" (click)="selectLiked()">
+                    <img class="item_image" *ngIf="isLiked" src="../../../../../assets/images/like.svg" alt="heart"/>
+                    <img class="item_image" *ngIf="!isLiked" src="../../../../../assets/images/like-red.svg" alt="heart"/>
+                    <span class="item_text">{{card.likes}}</span>
+                </a>
             </div>
         </div>
-        <span class="card_header">{{content.header}}</span>
-        <span class="card_text">{{content.text}}</span>
-        <div class="information">
-            <div class="information-about information-about_timer">
-                <span class="information-about_text information-about_text__timer">
+        <span class="card_title">{{card.title}}</span>
+        <span class="card_text">{{card.text}}</span>
+        <div class="intelligence">
+            <div class="chapter chapter_timer">
+                <span class="chapter_text chapter_timer_text">
                     Время приготовления:
                 </span>
-                <span class="information-about_number information-about_number__timer">
-                    {{content.time}}
+                <span class="chapter_number chapter_number_timer">
+                    {{card.time}}
                 </span>
             </div>
-            <div class="information-about information-about_people">
-                <span class="information-about_text information-about_text__people">
+            <div class="chapter chapter_persons">
+                <span class="chapter_text chapter_persons_text">
                     Рецепт на:
                 </span>
-                <span class="information-about_number information-about_number__people">
-                    {{content.persons}} персон
+                <span class="chapter_number chapter_number_persons">
+                    {{card.persons}} персон
                 </span>
             </div>
         </div>

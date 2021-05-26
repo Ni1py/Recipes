@@ -8,19 +8,19 @@ import { CardContent } from './card';
 })
 export class CardComponent implements OnInit {
 
-  @Input() content!: CardContent;
+  @Input() card!: CardContent;
 
-  isFavoriteRecipe: boolean = true;
-  isLikedRecipe: boolean = true;
+  isFavorite: boolean = true;
+  isLiked: boolean = true;
    
-  switchFavoriteRecipe()
+  selectFavorite()
   {
-    this.isFavoriteRecipe = !this.isFavoriteRecipe;
+    this.isFavorite = !this.isFavorite;
   }
 
-  switchLikedRecipe()
+  selectLiked()
   {
-    this.isLikedRecipe = !this.isLikedRecipe;
+    this.isLiked = !this.isLiked;
   }
 
   constructor() { }

@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isInitialized: boolean = false;
+
+  initialization() {
+    this.isInitialized = !this.isInitialized;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -38,6 +38,7 @@
     line-height: 28px;
     color: #FDB100;
     border-radius: 0 5px 5px 0;
+    text-decoration: none;
 }
 
 .card_content
@@ -50,7 +51,7 @@
     height: 379px;
 }
 
-.navigation
+.additional_features
 {
     display: flex;
     flex-direction: row;
@@ -69,6 +70,9 @@
 
 .tag
 {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     height: 23px;
     background: rgba(253,177,0,0.2);
     border-radius: 5px;
@@ -81,10 +85,11 @@
     padding: 0 7%;
     margin-right: 3%;
     cursor: pointer;
+    text-decoration: none;
     white-space: nowrap;
 }
 
-.buttons
+.items
 {
     display: flex;
     flex-direction: row;
@@ -92,7 +97,7 @@
     width: 33.1%;
 }
 
-.button
+.item
 {
     display: flex;
     flex-direction: row;
@@ -108,7 +113,7 @@
     cursor: pointer;
 }
 
-.button_text
+.item_text
 {
     display: block;
     width: 19px;
@@ -123,7 +128,7 @@
     margin-left: 9%;
 }
 
-.card_header
+.card_title
 {
     width: 693px;
     height: 30px;
@@ -150,7 +155,7 @@
     margin-top: 14px;
 }
 
-.information
+.intelligence
 {
     display: flex;
     flex-direction: row;
@@ -160,7 +165,7 @@
     margin-top: 40px;
 }
 
-.information-about
+.chapter
 {
     display: flex;
     flex-direction: column;
@@ -168,7 +173,7 @@
     position: relative;
 }
 
-.information-about_timer::before
+.chapter_timer::before
 {
     content: url("../../../../../assets/images/timer_icon.svg");
     width: 24px;
@@ -178,27 +183,12 @@
     left: 0;
 }
 
-.information-about_timer
+.chapter_timer
 {
     width: 47%;
 }
 
-.information-about_people::before
-{
-    content: url("../../../../../assets/images/people_icon.svg");
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    top: 12px;
-    left: 2px;
-}
-
-.information-about_people
-{
-    width: 41%;
-}
-
-.information-about_text
+.chapter_text
 {
     width: 168px;
     height: 28px;
@@ -211,17 +201,12 @@
     opacity: 0.5;
 }
 
-.information-about_text__timer
+.chapter_timer_text
 {
     margin: 3px 0 0 28%;
 }
 
-.information-about_text__people
-{
-    margin: 4px 0 0 37%;
-}
-
-.information-about_number
+.chapter_number
 {
     height: 28px;
     font-family: Montserrat;
@@ -233,13 +218,33 @@
     white-space: nowrap;
 }
 
-.information-about_number__timer
+.chapter_number_timer
 {
     width: 61px;
     margin: -4px 0 0 28%;
 }
 
-.information-about_number__people
+.chapter_persons::before
+{
+    content: url("../../../../../assets/images/persons_icon.png");
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    left: 2px;
+}
+
+.chapter_persons
+{
+    width: 41%;
+}
+
+.chapter_persons_text
+{
+    margin: 4px 0 0 37%;
+}
+
+.chapter_number_persons
 {
     width: 75px;
     margin: -4px 0 0 37%;

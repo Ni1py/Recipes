@@ -17,6 +17,7 @@ import { SortingByTagsRecipesComponent } from './Components/recipes-page/sorting
 import { SearchComponent } from './Components/recipes-page/search/search.component';
 import { RecipesComponent } from './Components/recipes-page/recipes/recipes.component';
 import { CardComponent } from './Components/recipes-page/recipes/card/card.component';
+import { UserLoggedInComponent } from './Components/header/user-logged-in/user-logged-in.component';
 
 // определение маршрутов
 const appRoutes: Routes = [
@@ -40,6 +41,7 @@ const appRoutes: Routes = [
     SearchComponent,
     RecipesComponent,
     CardComponent,
+    UserLoggedInComponent,
   ],
   imports: [
     BrowserModule,

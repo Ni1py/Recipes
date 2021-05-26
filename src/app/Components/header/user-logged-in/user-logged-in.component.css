@@ -1,3 +1,11 @@
+.user-logged-in
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 238px;
+}
+
 .item::before
 {
     content: url("../../../../assets/images/login-icon.svg");
@@ -5,12 +13,7 @@
     height: 38px;
     position: absolute;
     top: -8px;
-    left: -47px;
-}
-
-.item:hover {
-    text-shadow: 0 0 .65px #df9c00, 0 0 .65px #df9c00;
-    color: #df9c00;
+    left: -53px;
 }
 
 .item
@@ -20,10 +23,23 @@
     font-size: 18px;
     line-height: 22px;
     position: relative;
-    width: 60px;
     font-weight: 600;
     color: #FDB100;
-    margin-right: 0.4%;
     text-decoration: none;
+}
+
+.item::after
+{
+    content: url("../../../../assets/images/line.svg");
+    position: absolute;
+    top: 1px;
+    right: -33px;
+}
+
+.item_link
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }

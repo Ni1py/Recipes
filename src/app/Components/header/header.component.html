@@ -1,9 +1,11 @@
 <div class="header">
     <div class="navigation">
         <span class="title">Recipes</span>
-        <a href="#" class="item_home item" routerLink="/">Главная</a>
-        <a href="#" class="item_recipe item" routerLink="/recipe">Рецепты</a>
+        <a href="#" class="item_home item" routerLink="/" routerLinkActive="active"
+        [routerLinkActiveOptions]="{exact:true}">Главная</a>
+        <a href="#" class="item_recipe item" routerLink="/recipe" routerLinkActive="active">Рецепты</a>
         <a href="#" class="item_favorites item">Избранное</a>
     </div>
-    <app-login-button></app-login-button>
+    <app-login-button (click)="initialization()" *ngIf="!isInitialized"></app-login-button>
+    <app-user-logged-in *ngIf="isInitialized"></app-user-logged-in>
 </div>
