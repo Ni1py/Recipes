@@ -22,6 +22,7 @@
 
 .card
 {
+    transition: .3s;
     width: 23.2%;
     height: 156px;
     background: #FFFFFF;

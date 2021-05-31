@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isInitialized: boolean = false;
+  isLogIn: boolean = false;
 
-  initialization() {
-    this.isInitialized = !this.isInitialized;
+  toggleLoginStatus(_isLogIn: any) {
+    this.isLogIn = !_isLogIn;
   }
 
   constructor() { }

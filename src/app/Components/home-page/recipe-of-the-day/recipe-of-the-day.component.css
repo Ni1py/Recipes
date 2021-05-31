@@ -6,6 +6,7 @@
 
 .day_recipe
 {
+    transition: .3s;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -30,7 +31,7 @@
     padding: 178px 0;
 }
 
-.day_recipe_like:hover:before
+.day_recipe_like:hover::before
 {
     content: url("../../../../assets/images/like-red.svg");
     cursor: pointer;
@@ -60,7 +61,7 @@
 
 .day_recipe_time::before
 {
-    content: url(../../../../assets/images/day_recipe_time.png);
+    content: url("../../../../assets/images/day_recipe_time.png");
     width: 20px;
     height: 22px;
     position: absolute;

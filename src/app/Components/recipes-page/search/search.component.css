@@ -12,6 +12,7 @@
 
 .search_input
 {
+    transition: .3s;
     width: 73%;
     height: 17px;
     padding: 28px 32px;
@@ -32,15 +33,15 @@
 
 .search_button:hover
 {
-    width: 151px;
-    border: 1px solid #FDB100;
-    box-sizing: border-box;
+    box-shadow: 0 0 1px 1px #FDB100;
     background-color: #FFF;
     color: #FDB100;
 }
 
 .search_button
 {
+    box-shadow: 0 0 1px 1px #FDB100;
+    transition: .3s;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -78,6 +79,7 @@
 
 .tag
 {
+    transition: .3s;
     height: 18px;
     font-family: Montserrat;
     font-style: normal;

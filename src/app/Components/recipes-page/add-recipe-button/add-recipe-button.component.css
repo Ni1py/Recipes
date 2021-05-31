@@ -1,7 +1,6 @@
 .button:hover
 {
-    border: 1px solid #FDB100;
-    box-sizing: border-box;
+    box-shadow: 0 0 1px 1px #FDB100;
     background-color: #FFF;
     color: #FDB100;
 }
@@ -9,8 +8,6 @@
 .button:hover:before
 {
     color:#FDB100;
-    top: 16px;
-    left: 13.9%;
 }
 
 .button::before
@@ -26,6 +23,8 @@
 
 .button
 {
+    box-shadow: 0 0 1px 1px #FDB100;
+    transition: .3s;
     display: inline-flex;
     justify-content: center;
     align-items: center;

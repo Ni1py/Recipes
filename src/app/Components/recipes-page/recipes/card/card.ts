@@ -4,10 +4,10 @@ export interface CardContent {
     tag1: string;
     tag2: string;
     tag3: string;
-    favorites: string;
-    likes: string;
+    favorites: number;
+    likes: number;
     title: string;
     text: string;
     time: string;
-    persons: string;
+    persons: number;
 }

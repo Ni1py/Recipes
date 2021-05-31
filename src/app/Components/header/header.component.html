@@ -6,6 +6,6 @@
         <a href="#" class="item_recipe item" routerLink="/recipe" routerLinkActive="active">Рецепты</a>
         <a href="#" class="item_favorites item">Избранное</a>
     </div>
-    <app-login-button (click)="initialization()" *ngIf="!isInitialized"></app-login-button>
-    <app-user-logged-in *ngIf="isInitialized"></app-user-logged-in>
+    <app-login-button (click)="toggleLoginStatus(this.isLogIn)" *ngIf="!isLogIn"></app-login-button>
+    <app-user-logged-in *ngIf="isLogIn" (myEvent)="toggleLoginStatus($event)"></app-user-logged-in>
 </div>

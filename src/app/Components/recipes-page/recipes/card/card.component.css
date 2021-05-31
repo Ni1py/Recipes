@@ -6,6 +6,7 @@
 
 .card
 {
+    transition: .3s;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
