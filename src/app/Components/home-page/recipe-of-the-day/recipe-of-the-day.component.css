@@ -39,7 +39,7 @@
 
 .day_recipe_like::before
 {
-    content: url("../../../../assets/images/like.png");
+    content: url("../../../../assets/images/like.svg");
     width: 22px;
     height: 20px;
     position: absolute;
@@ -61,11 +61,11 @@
 
 .day_recipe_time::before
 {
-    content: url("../../../../assets/images/day_recipe_time.png");
+    content: url("../../../../assets/images/day_recipe_time.svg");
     width: 20px;
     height: 22px;
     position: absolute;
-    top: 1px;
+    top: 2px;
     right: 85px;
 }
 
