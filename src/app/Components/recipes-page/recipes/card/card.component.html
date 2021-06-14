@@ -1,35 +1,35 @@
-<div class="card">
-    <img class="card_image" src="{{card.image}}" alt="recipe"/>
+<a class="card" routerLink="/recipe/detailedRecipe">
+    <img class="card_image" src="{{card.photo}}" alt="recipe"/>
     <a class="card_author">{{card.author}}</a>
     <div class="card_content">
         <div class="additional_features">
             <div class="tags">
-                <a class="tag">{{card.tag1}}</a>
-                <a class="tag">{{card.tag2}}</a>
-                <a class="tag">{{card.tag3}}</a>
+                <a class="tag" *ngFor="let tag of card.tags">{{tag}}</a>
             </div>
             <div class="items">
-                <a class="item item_favorite" (click)="selectFavorite()">
-                    <img class="item_image" *ngIf="isFavorite" src="../../../../../assets/images/star.svg" alt="star"/>
-                    <img class="item_image" *ngIf="!isFavorite" src="../../../../../assets/images/star_full.svg" alt="star"/>
-                    <span class="item_text">{{card.favorites}}</span>
+                <a class="item item_favorite" (click)="selectFavourite()">
+                    <img class="item_image" *ngIf="isFavourite" src="../../../../../assets/images/star.svg" alt="star"/>
+                    <img class="item_image" *ngIf="!isFavourite" src="../../../../../assets/images/star_full.svg" alt="star"/>
+                    <span class="item_text">{{card.favourites}}</span>
                 </a>
                 <a class="item item_like" (click)="selectLiked()">
-                    <img class="item_image" *ngIf="isLiked" src="../../../../../assets/images/like.svg" alt="heart"/>
+                    <img class="item_image" *ngIf="isLiked" src="../../../../../assets/images/like-orange.svg" alt="heart"/>
                     <img class="item_image" *ngIf="!isLiked" src="../../../../../assets/images/like-red.svg" alt="heart"/>
                     <span class="item_text">{{card.likes}}</span>
                 </a>
             </div>
         </div>
-        <span class="card_title">{{card.title}}</span>
-        <span class="card_text">{{card.text}}</span>
+        <div class="card_title_block">
+            <span class="card_title" *ngIf="displayingThetTitle">{{card.name}}</span>
+        </div>
+        <span class="card_text">{{card.description}}</span>
         <div class="intelligence">
             <div class="chapter chapter_timer">
                 <span class="chapter_text chapter_timer_text">
                     Время приготовления:
                 </span>
                 <span class="chapter_number chapter_number_timer">
-                    {{card.time}}
+                    {{card.timeMinutes}} минут
                 </span>
             </div>
             <div class="chapter chapter_persons">
@@ -37,9 +37,9 @@
                     Рецепт на:
                 </span>
                 <span class="chapter_number chapter_number_persons">
-                    {{card.persons}} персон
+                    {{card.numberOfPersons}} персон
                 </span>
             </div>
         </div>
     </div>
-</div>
+</a>

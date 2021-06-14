@@ -18,11 +18,14 @@ import { SearchComponent } from './Components/recipes-page/search/search.compone
 import { RecipesComponent } from './Components/recipes-page/recipes/recipes.component';
 import { CardComponent } from './Components/recipes-page/recipes/card/card.component';
 import { UserLoggedInComponent } from './Components/header/user-logged-in/user-logged-in.component';
+import { DetailedRecipeComponent } from './Components/recipes-page/detailed-recipe/detailed-recipe.component';
+import { RecipeStepComponent } from './Components/recipes-page/detailed-recipe/recipe-step/recipe-step.component';
 
 // определение маршрутов
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
-  { path: 'recipe', component: RecipesPageComponent }
+  { path: 'recipe', component: RecipesPageComponent },
+  { path: 'recipe/detailedRecipe', component: DetailedRecipeComponent }
 ];
 
 @NgModule({
@@ -42,6 +45,8 @@ const appRoutes: Routes = [
     RecipesComponent,
     CardComponent,
     UserLoggedInComponent,
+    DetailedRecipeComponent,
+    RecipeStepComponent,
   ],
   imports: [
     BrowserModule,

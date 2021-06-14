@@ -6,6 +6,7 @@
 
 .card
 {
+    text-decoration: none;
     transition: .3s;
     display: flex;
     flex-direction: row;
@@ -129,6 +130,11 @@
     margin-left: 9%;
 }
 
+.card_title_block
+{
+    margin-top: 37px;
+}
+
 .card_title
 {
     width: 693px;
@@ -140,7 +146,6 @@
     line-height: 30px;
     text-transform: capitalize;
     color: #25292D;
-    margin-top: 37px;
 }
 
 .card_text
@@ -176,7 +181,7 @@
 
 .chapter_timer::before
 {
-    content: url("../../../../../assets/images/timer_icon.svg");
+    content: url("../../../../../assets/images/timer-icon.svg");
     width: 24px;
     height: 24px;
     position: absolute;
@@ -227,7 +232,7 @@
 
 .chapter_persons::before
 {
-    content: url("../../../../../assets/images/persons_icon.png");
+    content: url("../../../../../assets/images/persons-icon.svg");
     width: 24px;
     height: 24px;
     position: absolute;
