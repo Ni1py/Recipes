@@ -9,7 +9,7 @@ import { RecipeDTO } from '../../../../Entites/recipe-dto';
 export class CardComponent implements OnInit {
 
   @Input() card!: RecipeDTO;
-  @Input() displayingThetTitle!: boolean;
+  @Input() displayThetTitle!: boolean;
 
   isFavourite: boolean = true;
   isLiked: boolean = true;

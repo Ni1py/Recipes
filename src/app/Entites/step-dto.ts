@@ -1,4 +1,4 @@
 export interface StepDTO {
-    number: number;
-    description: string;
+  number: number;
+  description: string;
 }

@@ -1,4 +1,4 @@
 export interface IngredientDTO {
-    title: string;
-    items: string[];
+  title: string;
+  items: string[];
 }
