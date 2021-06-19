@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CardContent } from './card';
+import { RecipeDTO } from '../../../../Entites/recipe-dto';
 
 @Component({
   selector: 'app-card',
@@ -8,15 +8,16 @@ import { CardContent } from './card';
 })
 export class CardComponent implements OnInit {
 
-  @Input() card!: CardContent;
+  @Input() card!: RecipeDTO;
+  @Input() displayTheTitle!: boolean;
 
-  isFavorite: boolean = true;
+  isFavourite: boolean = true;
   isLiked: boolean = true;
    
-  selectFavorite()
+  selectFavourite()
   {
-    this.isFavorite = !this.isFavorite;
-    this.isFavorite == false ? this.card.favorites++ : this.card.favorites--;
+    this.isFavourite = !this.isFavourite;
+    this.isFavourite == false ? this.card.favourites++ : this.card.favourites--;
   }
 
   selectLiked()
