@@ -4,7 +4,7 @@
         <a href="#" class="item_home item" routerLink="/" routerLinkActive="active"
         [routerLinkActiveOptions]="{exact:true}">Главная</a>
         <a href="#" class="item_recipe item" routerLink="/recipe" routerLinkActive="active">Рецепты</a>
-        <a href="#" class="item_favorites item">Избранное</a>
+        <a href="#" class="item_favorites item" routerLink="/favorites" routerLinkActive="active">Избранное</a>
     </div>
     <app-login-button (click)="toggleLoginStatus(this.isLogIn)" *ngIf="!isLogIn"></app-login-button>
     <app-user-logged-in *ngIf="isLogIn" (myEvent)="toggleLoginStatus($event)"></app-user-logged-in>

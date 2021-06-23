@@ -1,6 +1,8 @@
 <div class="user-logged-in">
-    <span class="item">Привет, Татьяна</span>
-    <a class="item_link" (click)="toggleLoginStatus(true)">
+    <a class="profile" routerLink="/recipe/profile">
+        <span class="profile_name">Привет, Татьяна</span>
+    </a>
+    <a class="profile_exit" (click)="toggleLoginStatus(true)">
         <img src="../../../../assets/images/exit.svg" alt="Exit"/>
     </a>
 </div>

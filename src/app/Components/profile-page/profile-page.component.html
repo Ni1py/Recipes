@@ -1,0 +1,38 @@
+<div class="profile">
+    <a class="back" routerLink="/recipe">Назад</a>
+    <div class="title">
+        <span class="title_text">Мой профиль</span>
+    </div>
+    <div class="user-data">
+        <a class="edit"></a>
+        <div class="user-data_inputs">
+            <input class="user-data_input user-data_input_small" placeholder="Имя" type="text" name="name" [ngModel]="author.name" disabled>
+            <input class="user-data_input user-data_input_small" placeholder="Логин" type="text" name="login" [ngModel]="author.login" disabled>
+            <div class="password">
+                <input class="user-data_input user-data_input_small" placeholder="Пароль" type="password" name="password" id="password-input" [ngModel]="author.password" disabled>
+                <a class="password-displaying" id="password-link" (click)="showHidePassword()"></a>
+            </div>
+        </div>
+        <textarea class="user-data_input user-data_input_big" placeholder="Напишите немного о себе" type="text" name="description" [(ngModel)]="author.description"></textarea>
+    </div>
+    <div class="cards">
+        <div class="card">  
+            <span class="card_title">Всего рецептов</span>
+            <span class="card_number">15</span>
+        </div>
+        <div class="card">
+            <span class="card_title">Всего лайков</span>
+            <span class="card_number">15</span>
+        </div>
+        <div class="card">
+            <span class="card_title">В избранных</span>
+            <span class="card_number">15</span>
+        </div>
+    </div>
+    <div class="recipes">
+        <div class="recipes_title">
+            <span class="recipes_title_text">Мои рецепты</span>
+        </div>
+        <app-card class="recipe" *ngFor="let recipe of recipes" [card]="recipe" [displayTheTitle]="true"></app-card>
+    </div>
+</div>

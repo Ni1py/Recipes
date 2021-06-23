@@ -6,7 +6,18 @@
     width: 238px;
 }
 
-.item::before
+.profile:hover {
+    text-shadow: 0 0 .65px #f7ad02, 0 0 .65px #f7ad02;
+    color: #f7ad02;
+}
+
+.profile
+{
+    transition: text-shadow .2s;
+    text-decoration: none;
+}
+
+.profile_name::before
 {
     content: url("../../../../assets/images/login-icon.svg");
     width: 38px;
@@ -16,7 +27,7 @@
     left: -53px;
 }
 
-.item
+.profile_name
 {
     transition: text-shadow .3s;
     font-family: Montserrat;
@@ -28,7 +39,7 @@
     text-decoration: none;
 }
 
-.item::after
+.profile_name::after
 {
     content: url("../../../../assets/images/line.svg");
     position: absolute;
@@ -36,8 +47,17 @@
     right: -33px;
 }
 
-.item_link
+.profile_exit:hover
 {
+    box-shadow: 0 0 13px 2px #0000003d;
+    cursor: pointer;
+}
+
+.profile_exit
+{
+    transition: .3s;
+    width: 18px;
+    height: 18px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
