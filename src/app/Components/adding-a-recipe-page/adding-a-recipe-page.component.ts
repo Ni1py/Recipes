@@ -42,6 +42,11 @@ export class AddingARecipePageComponent implements OnInit {
   }
 
   addTag(event: MatChipInputEvent): void {
+    let tags: any = document.getElementById("tags");
+    if (this.recipe.tags.length == 4) {
+      tags.disabled = true;
+      tags.placeholder = "Максимум тегов";
+    }
     const tag: string = (event.value || '').trim();
     // Add our tag
     if (tag) {
@@ -52,6 +57,11 @@ export class AddingARecipePageComponent implements OnInit {
   }
 
   removeTag(tag: string): void {
+    let tags: any = document.getElementById("tags");
+    if (this.recipe.tags.length < 4) {
+      tags.disabled = false;
+      tags.placeholder = "Добавить теги";
+    }
     const index = this.recipe.tags.indexOf(tag);
     if (index >= 0) {
       this.recipe.tags.splice(index, 1);
@@ -59,6 +69,11 @@ export class AddingARecipePageComponent implements OnInit {
   }
 
   addIngredient(event: MatChipInputEvent, ingredient: IngredientDTO): void {
+    let ingredients: any = document.getElementById("ingredients");
+    if (ingredient.items.length == 9) {
+      ingredients.disabled = true;
+      ingredients.placeholder = "Максимум ингредиентов";
+    }
     const item: string = (event.value || '').trim();
     // Add our ingredient
     if (item) {
@@ -69,6 +84,11 @@ export class AddingARecipePageComponent implements OnInit {
   }
 
   removeIngredient(item: string, ingredient: IngredientDTO): void {
+    let ingredients: any = document.getElementById("ingredients");
+    if (ingredient.items.length == 9) {
+      ingredients.disabled = false;
+      ingredients.placeholder = "Добавить теги";
+    }
     const index = ingredient.items.indexOf(item);
     if (index >= 0) {
       ingredient.items.splice(index, 1);

@@ -65,6 +65,11 @@
     padding: 60px 5%;
     position: relative;
 }
+
+.user-data_active
+{
+    height: 261px;
+}
   
 .edit
 {
@@ -78,12 +83,22 @@
     background: url(../../../assets/images/edit-profile-icon.svg) 0 0 no-repeat;
 }
 
-.user-data_inputs  
+.user-data_left-column 
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 51.5%;
+    height: 100%;
+    background: #FFF;
+}
+
+.user-data_right-column 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 44.8%;
     height: 100%;
     background: #FFF;
 }
@@ -100,6 +115,27 @@
     line-height: 28px;
     color: rgba(37, 41, 45, 0.5);
     outline: none;
+}
+
+.user-data_input_active:focus::placeholder {
+    transform: translate(0px, -17px);
+    font-size: 11px;
+    color: #FDB100;
+}
+
+.user-data_input_active:hover
+{
+    border: 1px solid #FDB100;
+}
+
+.user-data_input_active:focus
+{
+    border: 1px solid #FDB100;
+}
+
+.user-data_input_active
+{
+    transition: .3s;
 }
 
 .user-data_input_small
@@ -119,6 +155,7 @@
 {
     border: 1px solid #FDB100;
 }
+
 .user-data_input_big:focus
 {
     border: 1px solid #FDB100;
@@ -129,8 +166,41 @@
     transition: .3s;
     resize: none;
     padding: 11px 32px 11px 32px;
-    width: 44.8%;
-    height: 100%;
+    height: 191px;
+}
+
+.user-data_input_big_active
+{
+    height: 191px;
+}
+
+.user-data_button:hover
+{
+    border: 1px solid #FDB100;
+    color: #FDB100;
+}
+
+.user-data_button
+{
+    border: 1px solid rgba(145, 150, 161, 0.4);
+    box-sizing: border-box;
+    border-radius: 16px;
+    transition: .3s;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(37, 41, 45, 0.5);
+    outline: none;
+    height: 50px;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .password
@@ -138,7 +208,7 @@
     position: relative;
 }
 
-.password-displaying {
+.password-invisible {
 	position: absolute;
 	top: 17px;
     right: 15px;
@@ -146,6 +216,20 @@
 	width: 25px;
 	height: 25px;
 	background: url(../../../assets/images/password-invisibility.svg) 0 0 no-repeat;
+}
+
+.password-visible {
+    position: absolute;
+	top: 14px;
+    right: 17px;
+    display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../../../assets/images/password-visibility.svg) 0 0 no-repeat;
+}
+
+.password-visible_active {
+	top: 15px;
 }
 
 .cards

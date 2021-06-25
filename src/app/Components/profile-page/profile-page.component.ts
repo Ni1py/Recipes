@@ -14,24 +14,33 @@ export class ProfilePageComponent implements OnInit {
   public author!: UserDTO;
 
   isVisible: boolean = false;
+  isEdit: boolean = false;
+
+  showEditing() {
+    let name: any = document.getElementById("name-input");
+    let login: any = document.getElementById("login-input");
+    let password: any = document.getElementById("password-input");
+    this.isEdit = !this.isEdit;
+    if (this.isEdit) {
+      name.disabled = false;
+      login.disabled = false;
+      password.disabled = false;
+    }
+    else {
+      name.disabled = true;
+      login.disabled = true;
+      password.disabled = true;
+    }
+  }
 
   showHidePassword() {
     this.isVisible = !this.isVisible;
-    let password: any;
-    let link: any;
-    password = document.getElementById("password-input");
-    link = document.getElementById("password-link");
+    let password: any = document.getElementById("password-input");
     if (this.isVisible) {
       password.type = "text";
-      link.style.background = "url(../../../assets/images/password-visibility.svg) 0 0 no-repeat";
-      link.style.top = "14px";
-      link.style.right = "17px";
     }
     else {
       password.type = "password";
-      link.style.background = "url(../../../assets/images/password-invisibility.svg) 0 0 no-repeat";
-      link.style.top = "17px";
-      link.style.right = "15px";
     }
   }
 

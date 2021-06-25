@@ -15,7 +15,7 @@
                 type="text" 
                 name="name" 
                 [(ngModel)]="recipe.name" 
-                autocomplete="off">
+                autocomplete="off"/>
             <textarea 
                 class="description_input description_input_big  description_input_text" 
                 placeholder="Краткое описание рецепта (150 символов)" 
@@ -36,10 +36,11 @@
                         <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
                     </mat-chip>
                     <input 
+                        id="tags"
                         placeholder="Добавить теги" 
                         [matChipInputFor]="chipList"
                         [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                        (matChipInputTokenEnd)="addTag($event)">
+                        (matChipInputTokenEnd)="addTag($event)"/>
                 </mat-chip-list>
             </div>  
             <div class="description_numbers">
@@ -50,7 +51,7 @@
                         type="text" 
                         name="time" 
                         [(ngModel)]="recipe.timeMinutes" 
-                        autocomplete="off">
+                        autocomplete="off"/>
                     <label class="description_text description_text_time">Минут</label>
                 </div>   
                 <div class="description_numbers_number">   
@@ -60,7 +61,7 @@
                         type="text" 
                         name="persons" 
                         [(ngModel)]="recipe.numberOfPersons" 
-                        autocomplete="off">
+                        autocomplete="off"/>
                     <label class="description_text">Персон</label>
                 </div>  
             </div>
@@ -77,7 +78,7 @@
                     type="text" 
                     name="title" 
                     [(ngModel)]="ingredient.title" 
-                    autocomplete="off">
+                    autocomplete="off"/>
                 <div class="ingredients_input ingredients_input_big">
                         <mat-chip-list #chipList aria-label="Ingredient selection">
                             <mat-chip 
@@ -88,10 +89,12 @@
                                 {{item}}
                                 <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
                             </mat-chip>
-                            <input placeholder="Список продуктов для категории" autocomplete="off"
+                            <input 
+                                id="ingredients"
+                                placeholder="Список продуктов для категории" 
                                 [matChipInputFor]="chipList"
                                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
-                                (matChipInputTokenEnd)="addIngredient($event, ingredient)">
+                                (matChipInputTokenEnd)="addIngredient($event, ingredient)"/>
                         </mat-chip-list>
                 </div> 
             </div>
