@@ -36,7 +36,6 @@
                         <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
                     </mat-chip>
                     <input 
-                        id="tags"
                         placeholder="Добавить теги" 
                         [matChipInputFor]="chipList"
                         [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
@@ -90,7 +89,6 @@
                                 <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
                             </mat-chip>
                             <input 
-                                id="ingredients"
                                 placeholder="Список продуктов для категории" 
                                 [matChipInputFor]="chipList"
                                 [matChipInputSeparatorKeyCodes]="separatorKeysCodes"

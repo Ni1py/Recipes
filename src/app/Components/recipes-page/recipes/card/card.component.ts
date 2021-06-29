@@ -10,9 +10,10 @@ export class CardComponent implements OnInit {
 
   @Input() card!: RecipeDTO;
   @Input() displayTheTitle!: boolean;
+  @Input() displayTheLink!: boolean;
+  @Input() isFavourite!: boolean;
 
-  isFavourite: boolean = true;
-  isLiked: boolean = true;
+  isLiked: boolean = false;
    
   selectFavourite()
   {

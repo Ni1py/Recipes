@@ -4,6 +4,6 @@
     </div>
     <span class="empty" *ngIf="empty">Ваш список пуст</span> 
     <div class="cards" *ngIf="!empty">
-        <app-card class="card" *ngFor="let recipe of recipes" [card]="recipe"></app-card>
+        <app-card class="card" *ngFor="let recipe of recipes" [card]="recipe" [displayTheTitle]="true" [displayTheLink]="true" [isFavourite]="true"></app-card>
     </div>
 </div>
