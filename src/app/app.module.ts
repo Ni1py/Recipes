@@ -28,6 +28,9 @@ import { RecipeStepComponent } from './Components/recipes-page/detailed-recipe/r
 import { AddingARecipePageComponent } from './Components/adding-a-recipe-page/adding-a-recipe-page.component';
 import { ProfilePageComponent } from './Components/profile-page/profile-page.component';
 import { FavoritesPageComponent } from './Components/favorites-page/favorites-page.component';
+import { PopupLinkComponent } from './Components/popup-link/popup-link.component';
+import { PopupAuthorizationComponent } from './Components/popup-authorization/popup-authorization.component';
+import { PopupRegistrationComponent } from './Components/popup-registration/popup-registration.component';
 
 // определение маршрутов
 const appRoutes: Routes = [
@@ -61,6 +64,9 @@ const appRoutes: Routes = [
     AddingARecipePageComponent,
     ProfilePageComponent,
     FavoritesPageComponent,
+    PopupLinkComponent,
+    PopupAuthorizationComponent,
+    PopupRegistrationComponent,
   ],
   imports: [
     BrowserModule,
