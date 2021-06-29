@@ -1,4 +1,4 @@
-<a class="card" routerLink="/recipe/detailedRecipe">
+<div class="card">
     <img class="card_image" src="{{card.photo}}" alt="recipe"/>
     <a class="card_author">{{card.author}}</a>
     <div class="card_content">
@@ -8,13 +8,13 @@
             </div>
             <div class="items">
                 <a class="item item_favorite" (click)="selectFavourite()">
-                    <img class="item_image" *ngIf="isFavourite" src="../../../../../assets/images/star.svg" alt="star"/>
-                    <img class="item_image" *ngIf="!isFavourite" src="../../../../../assets/images/star_full.svg" alt="star"/>
+                    <img class="item_image" *ngIf="!isFavourite" src="../../../../../assets/images/star.svg" alt="star"/>
+                    <img class="item_image" *ngIf="isFavourite" src="../../../../../assets/images/star_full.svg" alt="star"/>
                     <span class="item_text">{{card.favourites}}</span>
                 </a>
                 <a class="item item_like" (click)="selectLiked()">
-                    <img class="item_image" *ngIf="isLiked" src="../../../../../assets/images/like-orange.svg" alt="heart"/>
-                    <img class="item_image" *ngIf="!isLiked" src="../../../../../assets/images/like-red.svg" alt="heart"/>
+                    <img class="item_image" *ngIf="!isLiked" src="../../../../../assets/images/like-orange.svg" alt="heart"/>
+                    <img class="item_image" *ngIf="isLiked" src="../../../../../assets/images/like-red.svg" alt="heart"/>
                     <span class="item_text">{{card.likes}}</span>
                 </a>
             </div>
@@ -41,5 +41,6 @@
                 </span>
             </div>
         </div>
+        <a class="recipe-link" *ngIf="displayTheLink" routerLink="/recipe/detailedRecipe">Показать рецепт</a>
     </div>
-</a>
+</div>

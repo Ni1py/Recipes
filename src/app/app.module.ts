@@ -1,8 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {Routes, RouterModule} from '@angular/router';
-
+import { Routes, RouterModule } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
+import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatDialogModule } from '@angular/material/dialog';
+
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './Components/home-page/home-page.component';
 import { HeaderComponent } from './Components/header/header.component';
@@ -20,12 +25,18 @@ import { CardComponent } from './Components/recipes-page/recipes/card/card.compo
 import { UserLoggedInComponent } from './Components/header/user-logged-in/user-logged-in.component';
 import { DetailedRecipeComponent } from './Components/recipes-page/detailed-recipe/detailed-recipe.component';
 import { RecipeStepComponent } from './Components/recipes-page/detailed-recipe/recipe-step/recipe-step.component';
+import { AddingARecipePageComponent } from './Components/adding-a-recipe-page/adding-a-recipe-page.component';
+import { ProfilePageComponent } from './Components/profile-page/profile-page.component';
+import { FavoritesPageComponent } from './Components/favorites-page/favorites-page.component';
 
 // определение маршрутов
 const appRoutes: Routes = [
   { path: '', component: HomePageComponent },
   { path: 'recipe', component: RecipesPageComponent },
-  { path: 'recipe/detailedRecipe', component: DetailedRecipeComponent }
+  { path: 'recipe/detailedRecipe', component: DetailedRecipeComponent },
+  { path: 'recipe/addingRecipe', component: AddingARecipePageComponent },
+  { path: 'recipe/profile', component: ProfilePageComponent },
+  { path: 'favorites', component: FavoritesPageComponent }
 ];
 
 @NgModule({
@@ -47,9 +58,17 @@ const appRoutes: Routes = [
     UserLoggedInComponent,
     DetailedRecipeComponent,
     RecipeStepComponent,
+    AddingARecipePageComponent,
+    ProfilePageComponent,
+    FavoritesPageComponent,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    MatDialogModule,
+    MatIconModule,
+    MatChipsModule,
     RouterModule.forRoot(appRoutes),
     AppRoutingModule
   ],
