@@ -18,13 +18,13 @@ export class CardComponent implements OnInit {
   selectFavourite()
   {
     this.isFavourite = !this.isFavourite;
-    this.isFavourite == false ? this.card.favourites++ : this.card.favourites--;
+    this.isFavourite == true ? this.card.favourites++ : this.card.favourites--;
   }
 
   selectLiked()
   {
     this.isLiked = !this.isLiked;
-    this.isLiked == false ? this.card.likes++ : this.card.likes--;
+    this.isLiked == true ? this.card.likes++ : this.card.likes--;
   }
 
   constructor() { }
