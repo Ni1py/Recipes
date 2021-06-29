@@ -119,7 +119,7 @@
 
 .popup-authorization_button_cancel:hover
 {
-    background: rgb(253, 137, 0, 0.9);
+    background: #FDB100;
     border: none;
     color: #FFFFFF;
 }
