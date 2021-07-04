@@ -91,7 +91,10 @@
     width: 278px;
     height: 60px;
     border-radius: 16px;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -99,36 +102,37 @@
     line-height: 28px;
     margin: 30px 0 40px 0;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .popup-authorization_button_authorization:hover
 {
-    background-color: white;
-    border: 1px solid #FDB100;
-    box-sizing: border-box; 
+    background-color: #FFF;
+    box-shadow: 0 0 1px 1px #FDB100;
     color: #FDB100;
 }
 
 .popup-authorization_button_authorization
 {
-    transition: .3s;
+    box-shadow: 0 0 1px 1px #FDB100;
     background: #FDB100;
     border: none;
-    color: #FFFFFF;
+    color: #FFF;
+    transition: .3s;
 }
 
 .popup-authorization_button_cancel:hover
 {
     background: #FDB100;
+    box-shadow: 0 0 1px 1px #FDB100;
+    color: #FFF;
     border: none;
-    color: #FFFFFF;
 }
 
 .popup-authorization_button_cancel
 {
-    background-color: white;
-    border: 1px solid #FDB100;
-    box-sizing: border-box; 
+    background-color: #FFF;
+    box-shadow: 0 0 1px 1px #FDB100;
     color: #FDB100;
     transition: .3s;
 }

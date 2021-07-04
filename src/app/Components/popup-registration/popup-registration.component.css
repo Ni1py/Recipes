@@ -123,7 +123,10 @@
     width: 278px;
     height: 60px;
     border-radius: 16px;
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
@@ -131,38 +134,39 @@
     line-height: 28px;
     margin-bottom: 40px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .popup-registration_button_registration:hover
 {
-    background-color: white;
-    border: 1px solid #FDB100;
-    box-sizing: border-box; 
+    background-color: #FFF;
+    box-shadow: 0 0 1px 1px #FDB100;
     color: #FDB100;
 }
 
 .popup-registration_button_registration
 {
-    transition: .3s;
+    box-shadow: 0 0 1px 1px #FDB100;
     background: #FDB100;
     border: none;
-    color: #FFFFFF;
+    color: #FFF;
+    transition: .3s;
 }
 
 .popup-registration_button_cancel:hover
 {
     background: #FDB100;
+    box-shadow: 0 0 1px 1px #FDB100;
+    color: #FFF;
     border: none;
-    color: #FFFFFF;
 }
 
 .popup-registration_button_cancel
 {
-    transition: .3s;
-    background-color: white;
-    border: 1px solid #FDB100;
-    box-sizing: border-box; 
+    background-color: #FFF;
+    box-shadow: 0 0 1px 1px #FDB100;
     color: #FDB100;
+    transition: .3s;
 }
 
 .popup-registration_text
